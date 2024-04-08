@@ -1,3 +1,5 @@
+package numbers;
+
 import java.util.Scanner;
 
 public class Number_Palindrome_Check {

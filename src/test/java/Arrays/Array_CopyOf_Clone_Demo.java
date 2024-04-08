@@ -1,6 +1,11 @@
+// To demonstrate that we can create a copy of arrays using CopyOf and Clone methods
+// any changes to new array created won't affect other...
+
+package Arrays;
+
 import java.util.Arrays;
 
-public class Runner {
+public class Array_CopyOf_Clone_Demo {
   public static void main(String[] args) {
     // Using Arrays.copyOf
     int[] intArray = {1, 2, 3, 4, 5};

@@ -1,3 +1,5 @@
+package strings;
+
 public class Count_SubString_Occurance {
   public static void main(String[] args) {
 
