@@ -1,7 +1,7 @@
 // To demonstrate that we can create a copy of arrays using CopyOf and Clone methods
 // any changes to new array created won't affect other...
 
-package Arrays;
+package arrays;
 
 import java.util.Arrays;
 

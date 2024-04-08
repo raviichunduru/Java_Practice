@@ -1,4 +1,4 @@
-package employee;
+package POJO;
 
 public class Employee {
   public String name;

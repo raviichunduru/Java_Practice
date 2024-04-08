@@ -1,6 +1,6 @@
 package collections;
 
-import employee.Employee;
+import POJO.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

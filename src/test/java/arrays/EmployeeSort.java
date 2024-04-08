@@ -1,4 +1,6 @@
-package employee;
+package arrays;
+
+import POJO.Employee;
 
 import java.util.Arrays;
 import java.util.Comparator;
