@@ -1,29 +1,20 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import java.util.Stack;
+import java.util.stream.Collectors;
 
 public class Runner {
   public static void main(String[] args) {
-    // Using Arrays.copyOf
-    int[] intArray = {1, 2, 3, 4, 5};
-    int[] newArray = Arrays.copyOf(intArray, intArray.length); // Create a copy of intArray
 
-    // Modify intArray
-    intArray[0] = 100;
-
-    // Display both arrays
-    System.out.println("Using Arrays.copyOf:");
-    System.out.println("Original intArray: " + Arrays.toString(intArray));
-    System.out.println("New array: " + Arrays.toString(newArray));
-
-    // Using clone method
-    int[] intArray1 = {1, 2, 3, 4, 5};
-    int[] cloneArray = intArray1.clone(); // Create a clone of intArray1
-
-    // Modify intArray1
-    intArray1[0] = 200;
-
-    // Display both arrays
-    System.out.println("\nUsing clone method:");
-    System.out.println("Original intArray1: " + Arrays.toString(intArray1));
-    System.out.println("Clone array: " + Arrays.toString(cloneArray));
+   List<String> list = new ArrayList<>(Arrays.asList("a","b","c","a"));
+   Set<String> set = new HashSet<>();
+   set.clear();
+   set.addAll(list);
+   list.forEach(a-> System.out.println(a));
+   set.forEach(a-> System.out.println(a));
   }
 }
