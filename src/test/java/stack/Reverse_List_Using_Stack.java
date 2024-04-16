@@ -16,7 +16,7 @@ public class Reverse_List_Using_Stack {
     Stack<String> stack = new Stack<>();
 
     while(listIterator.hasNext()) {
-      stack.push(listIterator.next());
+      String string = stack.push(listIterator.next());
     }
 
     Iterator stackIterator = stack.iterator();
@@ -26,6 +26,6 @@ public class Reverse_List_Using_Stack {
       reverseList.add(stack.pop());
     }
 
-    reverseList.forEach(a-> System.out.println(a));
+   reverseList.forEach(a-> System.out.println(a));
   }
 }
