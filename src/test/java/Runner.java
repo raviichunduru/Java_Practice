@@ -16,5 +16,7 @@ public class Runner {
    set.addAll(list);
    list.forEach(a-> System.out.println(a));
    set.forEach(a-> System.out.println(a));
+
+   //Collections.sync
   }
 }
