@@ -12,9 +12,8 @@ public class SetDemo {
     set.add("A");
     set.add("B");
     set.add("C");
+
     //set.addAll(Set.of("aaa", "bbb", "ccc"));
-
-
     //System.out.println("set = " + set);
   }
 }

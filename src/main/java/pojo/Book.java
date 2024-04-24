@@ -1,6 +1,4 @@
-package POJO;
-
-import lombok.Builder;
+package pojo;
 
 public class Book implements Comparable<Book> {
   String title;

@@ -7,7 +7,7 @@ Assume you have bookstore app
  - Books to be sorted automatically in Lexicography order or alphabatical order of title
  */
 
-import POJO.Book;
+import pojo.Book;
 import java.util.TreeSet;
 
 public class BookStore {

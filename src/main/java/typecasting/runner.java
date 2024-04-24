@@ -1,8 +1,5 @@
 package typecasting;
 
-import typecasting.Car;
-import typecasting.Vehicle;
-
 public class runner {
   public static void main(String[] args) {
     // Create an instance of Vehicle and call its start method

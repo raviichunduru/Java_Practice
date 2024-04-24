@@ -1,6 +1,6 @@
 package assignments;
 
-import POJO.HolidayData;
+import pojo.HolidayData;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package POJO;
+package pojo;
 
 import lombok.Builder;
 import lombok.Data;
