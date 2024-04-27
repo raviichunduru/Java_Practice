@@ -17,7 +17,7 @@ public class String_Immutability {
     String s3 = new String("Raju");
 
 
-    System.out.println(s2 == s3); // both reference variables are pointing to same object different objects of same value
+    System.out.println(s2 == s3); // both reference variables are pointing to different objects of same value
     System.out.println(s2.equals(s3)); // when we compare value, it will be equal
   }
 }

@@ -152,7 +152,7 @@
         <!-- https://mvnrepository.com/artifact/io.github.sskorol/ttest-data-supplier -->
         <dependency>
             <groupId>io.github.sskorol</groupId>
-            <artifactId>ttest-data-supplier</artifactId>
+            <artifactId>test-data-supplier</artifactId>
             <version>${ttest-data-supplier.version}</version>
         </dependency>
 
