@@ -2,6 +2,7 @@ package date;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 
 public class CalendarDemo {
   public static void main(String[] args) {
@@ -31,5 +32,20 @@ public class CalendarDemo {
       "\nMinute: " + minute +
       "\nSecond: " + second +
       "\nMillisecond: " + millisecond);
+
+
+    // setting or changing values
+
+    calendar.set(Calendar.YEAR, 2009);
+    calendar.set(Calendar.MONTH, 11); // 11 = december
+    calendar.set(Calendar.DAY_OF_MONTH, 31); //
+
+    //add one day
+    calendar.add(Calendar.DAY_OF_MONTH, 1);
+
+    // date is now jan. 1st 2010
+        System.out.println("Year: " + calendar.get(Calendar.YEAR) +
+      "\nMonth: " + calendar.get(Calendar.MONTH) +
+      "\nDay of Month: " + calendar.get(Calendar.DAY_OF_MONTH));
   }
 }

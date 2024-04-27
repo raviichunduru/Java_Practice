@@ -202,8 +202,8 @@
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
                     <failOnViolation>true</failOnViolation>
                     <failsOnError>true</failsOnError>
-                    <configLocation>config/checkstyle/checkstyle.xml</configLocation>
-                    <suppressionsLocation>config/checkstyle/suppressions.xml</suppressionsLocation>
+                    <configLocation>config.properties.ReadingFromPropertiesFile/checkstyle/checkstyle.xml</configLocation>
+                    <suppressionsLocation>config.properties.ReadingFromPropertiesFile/checkstyle/suppressions.xml</suppressionsLocation>
                     <suppressionsFileExpression>suppressions.xml</suppressionsFileExpression>
                 </configuration>
                 <executions>
