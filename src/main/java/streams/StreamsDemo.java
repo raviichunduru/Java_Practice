@@ -15,18 +15,16 @@ public class StreamsDemo {
     TerminalOperations();
   }
 
-
   private static void Demonstrating_Terminal_NonTerminal_Operations() {
     List<String> stringList = Arrays.asList("ccc", "aaa", "bbb");
-    Stream<String> stringStream = stringList.stream();
 
-    //sorted in non-terminal operation, resulting another stream
+    //started in non-terminal operation, resulting another stream
     //foreach is terminal operation printing a result
     stringList.stream().sorted().forEach(str -> System.out.println(str));
 
-    // in order to perform another operation, you need to create stream again.
-    // if you try to do multiple operations it will result into IllegalStateException  exception
-    System.out.println("stringList.stream().sorted().count() = " + stringList.stream().sorted().count());
+    // in order to perform another operation on same collection, you need to create stream again.
+    // if you try to do another non-terminal operation on same stream it will result into IllegalStateException  exception
+    System.out.println("count " + stringList.stream().sorted().count());
   }
 
   private static void NonTerminalOperations() {
@@ -34,7 +32,7 @@ public class StreamsDemo {
     List<Integer> integerList = Arrays.asList(31341, 1414, 44141, 1414, 101, 201);
 
     integerList.stream()
-      .sorted()
+      .sorted() //
       .distinct()
       .map(i -> i / 10) // perform mentioned operation on each stream element, uses function interface
       .filter(i -> i < 1000) // filters elements based on predicate
@@ -57,8 +55,6 @@ public class StreamsDemo {
     System.out.println("Is Match Found in all strings :  " +
       stringList.stream().allMatch(value -> value.startsWith("One")));
 
-    // stringList.stream().sorted().collect(Collectors.toList()).forEach(value-> System.out.println(value));
-
     System.out.println("is stringList empty :  " + !stringList.stream().findFirst().isPresent());
 
     stringList.stream().min(Comparator.comparingInt(value -> value.length()))
@@ -68,5 +64,6 @@ public class StreamsDemo {
       return combinedvalue + " " + value;
     }).ifPresent(value -> System.out.println("Combined String : " +value));
 
+    stringList.stream().sorted().collect(Collectors.toList()).forEach(value-> System.out.println(value));
   }
 }
