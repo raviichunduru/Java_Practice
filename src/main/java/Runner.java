@@ -1,21 +1,17 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Properties;
-
 public class Runner {
-  public static void main(String[] args) throws ParseException, IOException {
 
-    final String CONFIG_FILE_PATH = System.getProperty("user.dir") + "/src/main/java/config.properties.properties";
+  public static void main(String[] args)  {
+    try {
+      System.out.println("Division_Operation(100,0) = " + Division_Operation(100, 0));
+    } catch (ArithmeticException e) {
+      System.out.println("Error: Division by zero.");
+    }
+  }
 
-    Properties properties = new Properties();
-    properties.load(new FileReader(new File(CONFIG_FILE_PATH)));
-
-    System.out.println("properties.properties.getProperty(\"username\") = " + properties.getProperty("username"));
+  public static double Division_Operation(double dividend, double diviser){
+    if (diviser == 0) {
+      throw new ArithmeticException("Division by zero is not allowed.");
+    }
+    return dividend / diviser;
   }
 }

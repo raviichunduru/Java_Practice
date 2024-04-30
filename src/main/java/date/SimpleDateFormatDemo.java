@@ -11,7 +11,7 @@ public class SimpleDateFormatDemo {
 
     System.out.println("printing date in default format = " + date);
 
-    String format = simpleDateFormat.format(new Date());
+    String format = simpleDateFormat.format(date);
     System.out.println("after formatting date into needed format = " + format);
 
     Date parse = simpleDateFormat.parse(format);
