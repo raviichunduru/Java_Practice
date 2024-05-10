@@ -28,7 +28,7 @@
         <fixture.factory.version>3.1.0</fixture.factory.version>
         <reflection.version>0.10.2</reflection.version>
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
-        <testng.version>7.9.0</testng.version>
+        <testng.version>7.10.2</testng.version>
         <ttest-data-supplier.version>2.3.0</ttest-data-supplier.version>
         <podam.version>8.0.1.RELEASE</podam.version>
         <jackson-databind>2.16.1</jackson-databind>
