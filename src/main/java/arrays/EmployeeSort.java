@@ -18,6 +18,7 @@ public class EmployeeSort {
   }
 
   private static void SortByEmployeeName(Employee[] employeeArray) {
+
     Arrays.sort(employeeArray, new Comparator<Employee>() {
       @Override
       public int compare(Employee e1, Employee e2) {

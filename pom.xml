@@ -21,20 +21,18 @@
         <assertjcore.version>3.21.0</assertjcore.version>
         <webdrivermanager.version>5.8.0</webdrivermanager.version>
         <selenium.version>4.21.0</selenium.version>
+        <selenium-java> </selenium-java>
         <lombok.version>1.18.30</lombok.version>
         <javafaker.version>1.0.2</javafaker.version>
         <awaitility.version>4.1.1</awaitility.version>
         <noexception.version>1.7.1</noexception.version>
         <fixture.factory.version>3.1.0</fixture.factory.version>
-        <reflection.version>0.10.2</reflection.version>
+        <!--<reflection.version>0.10.2</reflection.version>-->
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
         <testng.version>7.10.2</testng.version>
         <ttest-data-supplier.version>2.3.0</ttest-data-supplier.version>
         <podam.version>8.0.1.RELEASE</podam.version>
         <jackson-databind>2.16.1</jackson-databind>
-
-
-
     </properties>
 
     <dependencies>
