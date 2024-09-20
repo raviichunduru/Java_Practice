@@ -8,6 +8,7 @@ public class DateTimeFormatterDemo {
   public static void main(String[] args) {
     DateTimeFormatter formatter = DateTimeFormatter.BASIC_ISO_DATE;
 
+
     String formattedDate = formatter.format(LocalDate.now());
     System.out.println("date to string = " +formattedDate);
     TemporalAccessor parse = formatter.parse(formattedDate);

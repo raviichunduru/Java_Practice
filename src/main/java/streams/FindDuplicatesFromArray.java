@@ -17,7 +17,6 @@ public class FindDuplicatesFromArray {
     Set<Integer> set = new HashSet<>();
 
     integerList.stream().filter(i -> ! set.add(i)).forEach(System.out::println);
-
   }
 }
 

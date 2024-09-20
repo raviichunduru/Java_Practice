@@ -21,8 +21,9 @@ public class String_Palindrome_Check {
   }
 
   public static boolean isPalindrome(String string) {
+    char[] charArray = string.toCharArray();
     boolean isPalindrome = true;
-    
+
     for (int i=0; i < string.length()/2; i++) {
       char start = string.charAt(i);
       char end = string.charAt(string.length() - 1 - i);

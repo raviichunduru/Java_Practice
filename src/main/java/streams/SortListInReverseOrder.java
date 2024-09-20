@@ -10,6 +10,7 @@ public class SortListInReverseOrder {
   public static void main(String[] args) {
 
     List<String> stringList = List.of("frewgf", "gege", "rwqrfwfw", "kjyukjyukhj");
-    System.out.println(stringList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()).toString());
+    stringList.stream().sorted(Comparator.comparing(word->word.length())).forEach(s-> System.out.println(s));
+
   }
 }

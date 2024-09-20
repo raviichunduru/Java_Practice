@@ -2,6 +2,7 @@ package collections.arraylists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class MaxNumber {
   public static void main(String[] args) {

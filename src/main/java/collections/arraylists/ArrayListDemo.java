@@ -28,7 +28,5 @@ public class ArrayListDemo {
     for (int i = 0; i < arrayList.size(); i++) {
       System.out.println(i + "th Element = " + arrayList.get(i));   // print element using for loop
     }
-
-
   }
 }
