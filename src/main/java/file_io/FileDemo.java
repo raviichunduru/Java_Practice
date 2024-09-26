@@ -12,7 +12,7 @@ public class FileDemo {
 
 
     // creating multiple directories if not exists
-    File directoryExists = new File("C:\\dummy1\\dummy2\\");
+    File directoryExists = new File("C:\\dummy2\\dummy3\\");
     directoryExists.mkdirs();
     System.out.println("directoryExists = " + directoryExists.exists());
 
