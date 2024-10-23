@@ -1,4 +1,4 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
 public class PrintWords_WithEvenCount {
   public static void main(String[] args) {

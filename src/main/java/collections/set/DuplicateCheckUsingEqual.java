@@ -1,6 +1,4 @@
-package collections.set.duplicatecheck;
-
-import objectsclass.EqualsMethodDemo;
+package collections.set;
 
 import java.util.HashSet;
 import java.util.Set;

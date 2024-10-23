@@ -1,9 +1,7 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 public class Count_Occurence_Of_Word_In_String {

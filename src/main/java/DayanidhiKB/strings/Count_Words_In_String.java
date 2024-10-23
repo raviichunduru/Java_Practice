@@ -1,4 +1,4 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
 public class Count_Words_In_String {
   public static void main(String[] args) {

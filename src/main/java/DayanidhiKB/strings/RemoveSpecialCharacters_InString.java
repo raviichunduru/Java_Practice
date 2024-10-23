@@ -1,4 +1,4 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
 public class RemoveSpecialCharacters_InString {
   public static void main(String[] args) {

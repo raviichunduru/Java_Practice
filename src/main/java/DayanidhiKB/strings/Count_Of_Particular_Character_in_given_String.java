@@ -1,4 +1,4 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
 public class Count_Of_Particular_Character_in_given_String {
   public static void main(String[] args) {

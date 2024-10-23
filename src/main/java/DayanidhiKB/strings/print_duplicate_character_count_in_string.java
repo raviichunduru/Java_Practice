@@ -1,12 +1,13 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class printing_character_which_duplicated_higher {
+public class print_duplicate_character_count_in_string {
+
   public static void main(String[] args) {
+
     String s = "raghavaiah";
     char[] charArray = s.toCharArray();
     Integer count = 1;
@@ -27,14 +28,12 @@ public class printing_character_which_duplicated_higher {
       count=1;
     }
 
-    Integer highestDuplicateCount = charCount.values().stream().sorted(Comparator.reverseOrder()).findFirst().get();
-
     Iterator iterator = charCount.entrySet().iterator();
 
     while (iterator.hasNext()) {
       Map.Entry<Character, Integer> entry = (Map.Entry<Character, Integer>) iterator.next();
-      if(entry.getValue().equals(highestDuplicateCount)) {
-        System.out.println(entry.getKey() + " is duplicated highest, " +entry.getValue() +" times");
+      if(entry.getValue() > 1) {
+        System.out.println(entry.getKey() + " is duplicate, appeared " +entry.getValue() +" times");
       }
     }
   }

@@ -1,4 +1,4 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
 import java.util.ArrayList;
 import java.util.HashMap;

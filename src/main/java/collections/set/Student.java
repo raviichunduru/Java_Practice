@@ -1,4 +1,4 @@
-package collections.set.duplicatecheck;
+package collections.set;
 
 import java.util.Objects;
 

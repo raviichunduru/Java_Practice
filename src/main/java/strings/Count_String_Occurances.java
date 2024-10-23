@@ -11,5 +11,5 @@ public class Count_String_Occurances {
       .filter(name -> name.startsWith("S"))
       .collect(Collectors.groupingBy(names1->names1, Collectors.counting()))
       .forEach((name,count) -> System.out.println(name + " " + count));
-      }
-    }
+  }
+}

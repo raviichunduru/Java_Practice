@@ -1,7 +1,6 @@
 package streams;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class StringAnagramCheck {
@@ -19,6 +18,4 @@ public class StringAnagramCheck {
     else
       System.out.println("not anagrams");
   }
-
-
 }

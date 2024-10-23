@@ -3,12 +3,13 @@ package collections.arraylists;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 public class MaxNumber {
   public static void main(String[] args) {
 
     ArrayList<Integer> integerArrayList = new ArrayList<>();
-    integerArrayList.addAll(Arrays.asList(11,2,53,21,24,311,53,2,76,44,412));
+    integerArrayList.addAll(List.of(11,2,53,21,24,311,53,2,76,44,412));
 
     MaxValue(integerArrayList);
     MaxValueWithInRange(integerArrayList, 3, 9);
@@ -33,6 +34,4 @@ public class MaxNumber {
     }
     System.out.println("maxValue = " + maxValue);
   }
-
-
 }

@@ -1,4 +1,4 @@
-package Dayanidhikb.strings;
+package DayanidhiKB.strings;
 
 public class RemoveSpacesInString {
   public static void main(String[] args) {
