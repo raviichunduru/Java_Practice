@@ -2,17 +2,16 @@ package Comparator;
 
 import lombok.Builder;
 import lombok.Data;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class SortingEmployeesByTheirNames {
+public class SortingEmployeesUsingStreams {
 
   @Data
   @Builder(setterPrefix = "set")
   public static class Employee {
-    int empNum;
-    String empName;
+    private int empNum;
+    private String empName;
   }
 
   public static void main (String[] args) {
@@ -25,15 +24,15 @@ public class SortingEmployeesByTheirNames {
     employees.addAll(Arrays.asList(emp1,emp2,emp3));
 
     System.out.println("Before Sort");
-    employees.forEach(e-> System.out.println(e));
+    employees.forEach(System.out::println);
     System.out.println();
 
     List<Employee> sortedEmployees = employees
       .stream()
-      .sorted(Comparator.comparing(e->e.empNum))
+      .sorted(Comparator.comparing(Employee::getEmpName))
       .collect(Collectors.toList());
 
     System.out.println("After Sort");
-    sortedEmployees.forEach(e-> System.out.println(e));
+    sortedEmployees.forEach(System.out::println);
   }
 }
