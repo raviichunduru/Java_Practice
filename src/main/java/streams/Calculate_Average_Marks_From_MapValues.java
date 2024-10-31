@@ -20,6 +20,5 @@ public class Calculate_Average_Marks_From_MapValues {
 
     Double sumOfMarks = (double) studentMap.values().stream().mapToInt(Integer::intValue).sum();
     System.out.println("Average Marks = " + (sumOfMarks / studentMap.size()));
-
   }
 }
